@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <h1 id="result"></h1>
+    <h2 class="output"></h2>
+    <h3 id="outputName"></h3>
+    <fieldset style="width: fit-content;">
+        <legend>JavaScript Activities</legend>
+        <button type="button" onclick="inputTwoNumbers(),checkGrade();">Input Two Numbers / Check Grade</button>
+        <button type="button" onclick="confirmSubmission();">Confirm Submission</button>
+        <button type="button" onclick="calculateGrade();">Calculate Grade</button>
+    </fieldset>
+    <h3 id="compute"></h3>
+    <script src="custom.js"></script>
+    <script type="text/javascript">
+        document.write("JavaScript_Activity"); 
+        console.log("Hello");
+
+        let name = "JONALYN ESPARES";
+        var age = 20;
+        const remarks = "Student";
+        let course = "Bachelor of Science in Information System"
+        document.write("<br>");
+        document.write(age + " " + name + " " + remarks);
+        
+        document.getElementById("result").innerHTML = age + "." + name + "_" + remarks ;
+        document.getElementsByClassName("output")[0].innerHTML = course ;
+
+        document.getElementById("outputName").innerHTML = displayName("CanSir");
+        document.write("<br>");
+        document.write(displayName("CanSir"));
+
+        console.log(computeTwoNumbers(12,3));
+        document.write(computeTwoNumbers(12,3));
+        document.getElementById("compute").innerHTML = computeTwoNumbers(12,3);
+
+        calculateGrade();
+        
+    </script>
+</body>
+</html>
